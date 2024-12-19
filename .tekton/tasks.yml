@@ -7,3 +7,10 @@ tasks:
     params:
       - name: path
         value: /workspace/source
+
+- name: nose-test
+    taskRef:
+      name: nose-test-task
+    params:
+      - name: test-path
+        value: /workspace/source/tests
