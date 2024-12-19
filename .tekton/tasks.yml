@@ -1,0 +1,9 @@
+tasks:
+  - name: cleanup
+    taskRef:
+      name: cleanup-task
+    runAfter:
+      - test-task
+    params:
+      - name: path
+        value: /workspace/source
